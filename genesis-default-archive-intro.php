@@ -32,7 +32,7 @@
  * @param object $term
  * @return string $headline
  */
-function be_genesis_default_archive_intro( $value, $term_id, $meta_key, $single ) {
+function be_genesis_default_term_archive_intro( $value, $term_id, $meta_key, $single ) {
 
 	$options = array(
 		'headline'   => 'name',
@@ -56,4 +56,36 @@ function be_genesis_default_archive_intro( $value, $term_id, $meta_key, $single 
 
     return $value;      
 }
-add_filter( 'get_term_metadata', 'be_genesis_default_archive_intro', 10, 4 );
+add_filter( 'get_term_metadata', 'be_genesis_default_term_archive_intro', 10, 4 );
+
+/**
+ * Default Title for User Archives
+ *
+ * @param string $value
+ * @param int $user_id
+ * @return string $value
+ */
+function be_genesis_default_user_archive_title( $title, $user_id ) {
+
+	if( empty( $title ) ) 
+		$title = get_the_author_meta( 'display_name', $user_id );
+		
+	return $title;
+}
+add_filter( 'get_the_author_headline', 'be_genesis_default_user_archive_title', 10, 2 );
+
+/**
+ * Default Description for User Archives
+ *
+ * @param string $description
+ * @param int $user_id
+ * @return string $description
+ */
+function be_genesis_default_user_archive_description( $description, $user_id ) {
+
+	if( empty( $description ) )
+		$description = get_the_author_meta( 'description', $user_id );
+
+	return $description;
+}
+add_filter( 'get_the_author_intro_text', 'be_genesis_default_user_archive_description', 10, 2 );
