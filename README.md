@@ -9,4 +9,4 @@ You can still write your own custom headline/intro text by using the "Archive He
 
 ![frontend](https://s3.amazonaws.com/f.cl.ly/items/0U3z3y3o03180K0s3Z0e/Screen%20Shot%202016-06-10%20at%2011.24.58%20AM.png?v=0bc37bd5)
 
-![backend](https://s3.amazonaws.com/f.cl.ly/items/460L3N2F3w0I3e2c2z14/Screen%20Shot%202016-06-10%20at%2011.48.05%20AM.png?v=8d1bd37b)
+![backend](https://s3.amazonaws.com/f.cl.ly/items/2b0q2Y02060H280O3K1D/Screen%20Shot%202016-06-10%20at%2011.48.54%20AM.png?v=f420f382)
