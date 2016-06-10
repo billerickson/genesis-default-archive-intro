@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Genesis Default Archive Intro
  * Plugin URI: https://github.com/billerickson/genesis-default-archive-intro
- * Description: 
+ * Description: If Archive Headline / Intro Text are not specified, they default to Term Name / Description
  * Version: 1.0.0
  * Author: Bill Erickson
  * Author URI: http://www.billerickson.net
